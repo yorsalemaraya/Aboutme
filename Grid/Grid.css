@@ -1,0 +1,59 @@
+* {
+box-sizing: border-box;
+
+} 
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: column;
+
+
+}  
+
+.grid__cell-100 {
+    display:flex;
+    background-color:blue;
+    flex:0 0 calc(100%-16px);
+    margin: 8px;
+    padding:0 0 8px;
+    
+} 
+.grid__cell-50 {
+    display:flex;
+    background-color: blueviolet;
+    flex:0 0 calc(50%-16px);
+    margin: 8px;
+    justify-content: center;
+    padding:0 0 8px;
+
+} 
+
+.grid__cell-25 {
+    display:flex;
+    background-color: yellow;
+    flex:0 0 calc(25%-16px);
+    margin: 8px;
+    padding: 0 0 8px;
+
+} 
+
+.grid__cell-25-org {
+    display:flex;
+    background-color: orange;
+    flex:0 0 calc(25%-16px);
+    margin: 8px;
+    padding: 0 0 8px;
+
+} 
+
+@media all and (min-width: 500px) and (max-width :2000px) {
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+}
