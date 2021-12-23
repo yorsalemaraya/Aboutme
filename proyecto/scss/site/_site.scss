@@ -1,0 +1,56 @@
+//-----> $SITE
+
+html  {
+  font-size: 100%;
+}
+body, html {
+  height: 100%
+}
+body {
+  font-family: Overpass Mono; 
+  background-color: $grey;
+
+}
+
+
+h1 {
+font-family: Overpass Mono;
+font-style: normal;
+font-weight: 600;
+font-size: 96px;
+line-height: 147px;
+color:black;
+justify-content: center;
+text-align: center;
+
+}
+
+h2 {
+
+  
+  font-family: Overpass Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center; 
+  color:black;
+}
+
+
+h3 {
+  font-family: Overpass Mono;
+  color: white;
+  position: static;
+  justify-content: right;
+  font-size: 36px;
+  text-align: right;
+
+width: 331px;
+left: 26px;
+top: 167px;
+border-radius: 0px;
+
+}
+
+
+

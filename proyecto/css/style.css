@@ -1,0 +1,153 @@
+html {
+  font-size: 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: Overpass Mono;
+  background-color: #929292;
+}
+
+h1 {
+  font-family: Overpass Mono;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 147px;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  font-family: Overpass Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  font-family: Overpass Mono;
+  color: white;
+  position: static;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-size: 36px;
+  text-align: right;
+  width: 331px;
+  left: 26px;
+  top: 167px;
+  border-radius: 0px;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2048px;
+  width: 80%;
+}
+.grid__cell {
+  padding: 12px;
+  margin: 11px;
+}
+.grid__cell--50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(10% - 6px);
+          flex: 0 0 calc(10% - 6px);
+}
+.grid__cell--10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+}
+
+.card-link {
+  display: inline-block;
+  padding: 41px 38px;
+  width: 143px;
+  height: 151px;
+  left: 436px;
+  top: 26.5px;
+  background: rgba(134, 134, 134, 0.26);
+  border-radius: 20px;
+  margin: 12px;
+  text-align: center;
+}
+.card-link:visited {
+  color: white;
+}
+.card-link__icon svg {
+  color: black;
+}
+.card-link__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.avatar {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: solid 5px white;
+  border-radius: 50%;
+  background-image: url("../images/avatar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.avatar:hover + .avatar__edit {
+  -webkit-transform: scale(1.1) rotate(10deg);
+          transform: scale(1.1) rotate(10deg);
+  -webkit-box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.avatar__edit {
+  position: absolute;
+  bottom: -0.5em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2.3em;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.avatar__edit svg {
+  width: 1em;
+  height: 1em;
+}
+.avatar__container {
+  position: relative;
+  text-align: center;
+  background-color: #436813;
+}
