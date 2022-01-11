@@ -1,56 +1,69 @@
 //-----> $SITE
 
+@media only screen and (max-width: 600px) {
+
+
 html  {
   font-size: 100%;
 }
 body, html {
-  height: 100%
+  height: 100%;
 }
 body {
-  font-family: Overpass Mono; 
   background-color: $grey;
-
 }
 
 
-h1 {
+.BigTitle {
 font-family: Overpass Mono;
-font-style: normal;
-font-weight: 600;
-font-size: 96px;
-line-height: 147px;
-color:black;
-justify-content: center;
+display: block;
 text-align: center;
-
+font-style: normal;
+font-size: 96px;
+position: static;
+margin-top: 70px;
 }
 
-h2 {
-
-  
+.smalltitle {
   font-family: Overpass Mono;
   font-style: normal;
   font-weight: bold;
+  display: block;
+  position: static;
   font-size: 14px;
-  text-align: center; 
+  text-align: left;
+  margin-left: 26px; 
+
   color:black;
 }
 
+.smalltitle_1{
+  font-family: 'Overpass Mono';
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  position: static;
+  font-size: 14px;
+  text-align: right; 
+  margin-right: 26px; 
 
-h3 {
-  font-family: Overpass Mono;
+
+  color:black;
+}
+
+H1, h2 {
+  font-family: 'Overpass Mono';
   color: white;
   position: static;
   justify-content: right;
   font-size: 36px;
-  text-align: right;
-
+  text-align: center;
 width: 331px;
 left: 26px;
 top: 167px;
 border-radius: 0px;
 
 }
-
+}
 
 

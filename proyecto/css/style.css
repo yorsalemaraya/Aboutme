@@ -1,53 +1,65 @@
-html {
-  font-size: 100%;
-}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
 
-body, html {
-  height: 100%;
-}
+  body, html {
+    height: 100%;
+  }
 
-body {
-  font-family: Overpass Mono;
-  background-color: #929292;
-}
+  body {
+    background-color: #929292;
+  }
 
-h1 {
-  font-family: Overpass Mono;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 96px;
-  line-height: 147px;
-  color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
+  .BigTitle {
+    font-family: Overpass Mono;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-size: 96px;
+    position: static;
+    margin-top: 70px;
+  }
 
-h2 {
-  font-family: Overpass Mono;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  color: black;
-}
+  .smalltitle {
+    font-family: Overpass Mono;
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    position: static;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 26px;
+    color: black;
+  }
 
-h3 {
-  font-family: Overpass Mono;
-  color: white;
-  position: static;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  font-size: 36px;
-  text-align: right;
-  width: 331px;
-  left: 26px;
-  top: 167px;
-  border-radius: 0px;
-}
+  .smalltitle_1 {
+    font-family: "Overpass Mono";
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    position: static;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 26px;
+    color: black;
+  }
 
+  H1, h2 {
+    font-family: "Overpass Mono";
+    color: white;
+    position: static;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    font-size: 36px;
+    text-align: center;
+    width: 331px;
+    left: 26px;
+    top: 167px;
+    border-radius: 0px;
+  }
+}
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,44 +122,12 @@ h3 {
 }
 
 .avatar {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border: solid 5px white;
-  border-radius: 50%;
-  background-image: url("../images/avatar.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  max-width: 100%;
+  height: auto;
+  border: solid 5px #FFE600;
 }
-.avatar:hover + .avatar__edit {
-  -webkit-transform: scale(1.1) rotate(10deg);
-          transform: scale(1.1) rotate(10deg);
-  -webkit-box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: -2px -2px 5px 5px rgba(0, 0, 0, 0.5);
-}
-.avatar__edit {
-  position: absolute;
-  bottom: -0.5em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: white;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2.3em;
-  border-radius: 50%;
-  text-align: center;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.avatar__edit svg {
-  width: 1em;
-  height: 1em;
-}
-.avatar__container {
-  position: relative;
-  text-align: center;
-  background-color: #436813;
+
+img {
+  display: block;
+  margin: auto;
 }
