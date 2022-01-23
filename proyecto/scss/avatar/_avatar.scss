@@ -1,27 +1,50 @@
 //-----> $AVATAR
 
- .avatar {
-   display: block;
-  max-width: 100%;
-  padding: 0px;
-}
+@media only screen and (max-width: 500px){
 
-
- img {
-   margin: auto;
-   padding-bottom: 20px;
-   align-items: center;
-   display: block;
-  }
-
-.subtitles {
-position :absolute;
-
- }
-
- .graduation {
-  display: block;
+.avatar {
+display: block;
  max-width: 100%;
 }
 
 
+.line {
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+  display: block;
+ }
+
+
+.graduation {
+ display: block;
+max-width: 100%;
+opacity: 0.5;
+position: relative;
+
+
+}
+}
+@media only screen and (min-width: 500px){
+
+ .avatar {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: right;
+}
+
+
+.line {
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+  display: block;
+}
+
+  .graduation {
+display: none;
+ }
+
+}

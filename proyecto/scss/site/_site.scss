@@ -7,66 +7,58 @@
 
  @media screen and (max-width: 500px) {
 html  {
-  background: linear-gradient(180deg, #A8A8A8 0%, #2D2C2C 36.46%);
   font-size: 100%;
-  width: 100%;
 }
 
-
 body {
+  background: linear-gradient(180deg, #A8A8A8 0%, #2D2C2C 36.46%);
   max-width: 100%;
-  place-items: center;
+  margin: 0;
 }
 
 
 .header {
-  background-position: center;
-
+  min-height: 100vh;
+  width: 100%;
 }
 
 .BigTitle {
-font-family: Overpass Mono;
-display: block;
+font-family: "Overpass Mono";
 text-align: center;
 font-style: normal;
-font-size: 96px;
+font-size: 100px;
 position: static;
-margin-top: 30px;
+
 }
 
 .smalltitle {
-  font-family: Overpass Mono;
+  font-family: "Overpass Mono";
   font-style: normal;
   font-weight: bold;
-  display: block;
   position: static;
   font-size: 14px;
   text-align: left;
   margin-left: 26px; 
-
   color:black;
 }
 
 .smalltitle_1{
-  font-family: 'Overpass Mono';
+  font-family: "Overpass Mono";
   font-style: normal;
   font-weight: bold;
   display: block;
   position: static;
   font-size: 14px;
   text-align: right; 
-  margin-right: 26px; 
-
-
+  margin-right: 26px;
   color:black;
 }
 
 H1, h2 {
-  font-family: 'Overpass Mono';
+  font-family: "Overpass Mono";
+  font-style: normal;
   color: white;
   position: static;
-  right: -2em;
-  justify-content: right;
   font-size: 36px;
   text-align: center;
 }
@@ -76,15 +68,12 @@ H1, h2 {
   display: inline-block;
   position: relative;
   line-height: 6;
-  right: -10em;
   margin: 3em;
   color: white;
-  bottom: 100%;
 
-
+  
   &:after {
     content:"";
-    display: block;
     position: absolute;
     left: 50%;
     top: 0;
@@ -96,50 +85,231 @@ H1, h2 {
 }
 
 
-
-
-.Presentation{
-  font-family: Overpass Mono;
-  font-style: italic;
-  font-weight: bold;
-  display: block;
-  position: static;
-  font-size: 16px;
-  text-align: left;
-  margin-left: 26px;
-  color: white;
+.section-class-1 {
+  font-weight: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+}
+.section-class-2 {
+  font-weight: 100%;
+  min-height: 100vh;
 }
 
-
-.section-class {
-  font-weight: 100%;
+.section-class-3{
   width: 100%;
 
+}
 
-p {
-
+.Text {
+  max-width: 100%;
   font-family: Overpass Mono;
   display: block;
-  position: static;
-  font-size: 12px;
-  text-align: left;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 40px;
+  font-size: 15px;
+  text-align: center;
   line-height: 35px;
-
   color: white;
+  padding: 20px;
+  margin: auto;
 }
+
+.logo{
+  margin: 30px;
 }
+
+.myhobbies {
+  display: flex;
+align-items: center; 
+line-height: 2;
+margin:auto;
+flex-direction: column; 
+
+}
+.icons {
+display: flex;
+flex-direction: column; 
+margin: 20px;
+
+}
+
 
 .contact {
-color: white;
-background-color: #78797C;
-font-size: 36px;
+font-family: 'Overpass Mono';
+font-style: normal;
+width: 100%;
+color: black;
+background-color: #A8A8A8;
+font-size: 30px;
 text-align: center;
-padding-top: 20px;
-padding-bottom: 30px;
+margin-bottom: 30px;
 
 }
 }
 
+@media only screen and (min-width: 500px){
+
+  html  {
+    font-size: 100%;
+    width: 100%;
+    margin: 0;
+    background-color:#3b3b3b ;
+  }
+  
+  body {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .title {
+  margin: auto;
+    
+  }
+  .header {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    line-height: 70px;
+    background: linear-gradient(180deg,  #9b9999);
+    
+  }
+  
+  .BigTitle {
+  font-family: 'Overpass Mono';
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-size: 90px;
+  position: static;
+  margin-top: 30px;
+  }
+  
+  .smalltitle {
+    font-family: 'Overpass Mono';
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    position: static;
+    font-size: 18px;
+    text-align: left;
+    color:black;
+  }
+  
+  .smalltitle_1{
+    font-family: 'Overpass Mono';
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    position: static;
+    font-size: 18px;
+    text-align: right; 
+    color:black;
+  }
+  
+  H1, h2 {
+    font-family: 'Overpass Mono';
+    color: white;
+    position: static;
+    right: -2em;
+    justify-content: right;
+    font-size: 70px;
+    text-align: center;
+  }
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+
+  
+  .section-class-1{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .section-class-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("..//images/graduation.svg");
+
+  }
+
+  .section-class-3 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+
+  
+  .Text{
+    font-family: 'Overpass Mono';
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px; 
+    }
+
+ 
+    .myhobbies {
+      display: flex;
+align-items: center; 
+flex-direction: column; 
+line-height: 2;
+margin:auto;
+  }
+  .icons {
+    margin-top: 80px;
+  }
+
+  .logo{
+    margin: 60px;
+  }
+  .page-title {
+    font-family: 'Overpass Mono';
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    line-height: 10;
+    font-size: 25px;
+    margin: 6em;
+    color: white;
+  
+  
+    &:after {
+      content:"";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%) rotate(45deg);
+      width: 10em;
+      height: 10em;
+      border:1px solid #FFE600;
+
+    }
+  }
+
+
+  .contact {
+    font-family: 'Overpass Mono';
+    font-style: normal;
+  width: 100%;
+  color: black;
+  background-color: #A8A8A8;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+}
