@@ -5,6 +5,8 @@
 .avatar {
 display: block;
  max-width: 100%;
+ margin-right: 20px;
+
 }
 
 
@@ -22,7 +24,6 @@ max-width: 100%;
 opacity: 0.5;
 position: relative;
 
-
 }
 }
 @media only screen and (min-width: 500px){
@@ -33,12 +34,13 @@ position: relative;
    height: 100%;
    object-fit: cover;
    object-position: right;
+
 }
 
 
 .line {
   margin: auto;
-  margin-top: 30px;
+  padding: 40px;
   align-items: center;
   display: block;
 }
