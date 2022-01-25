@@ -15,13 +15,13 @@ html {
     background: linear-gradient(180deg, #A8A8A8 0%, #2D2C2C 36.46%);
     max-width: 100%;
     margin: 0;
-    background: #494848;
+    background: #3b3b3b;
   }
 
   .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #555454 70.5%);
+    background: linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #2D2C2C 70.5%);
   }
 
   .BigTitle {
@@ -197,7 +197,7 @@ html {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: #494848;
+    background: #3b3b3b;
   }
 
   .title {
@@ -210,16 +210,16 @@ html {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    line-height: 50px;
-    background: linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #555454 70.5%);
-    margin: 20px;
+    line-height: 40px;
+    background: linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #2D2C2C 70.5%);
+    margin: 40px;
   }
   .header .BigTitle {
     font-family: "Overpass Mono";
     display: block;
     text-align: center;
     font-style: normal;
-    font-size: 60px;
+    font-size: 80px;
     position: static;
     margin-top: 30px;
     color: black;
@@ -244,14 +244,15 @@ html {
   }
   .header H1, .header h2 {
     font-family: "Overpass Mono";
-    font-style: normal;
+    font-style: Normal;
+    font-weight: 100;
     color: white;
     position: static;
     right: -2em;
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
-    font-size: 60px;
+    font-size: 90px;
     text-align: center;
   }
 
@@ -313,7 +314,7 @@ html {
   .Text {
     font-family: "Overpass Mono";
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 35px;
     color: white;
@@ -435,6 +436,7 @@ html {
     display: block;
     max-width: 100%;
     margin-right: 20px;
+    overflow: hidden;
   }
 
   .line {
@@ -456,12 +458,13 @@ html {
 @media only screen and (min-width: 500px) {
   .avatar {
     display: block;
-    width: 100%;
+    position: relative;
+    max-width: 90%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: right;
-       object-position: right;
+    -o-object-position: left;
+       object-position: left;
   }
 
   .line {

@@ -17,7 +17,7 @@ body {
   background: linear-gradient(180deg, #A8A8A8 0%, #2D2C2C 36.46%);
   max-width: 100%;
   margin: 0;
-  background : #494848;
+  background : #3b3b3b;
 
 }
 
@@ -25,7 +25,7 @@ body {
 .header {
   min-height: 100vh;
   width: 100%;
-  background : linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #555454 70.5%);
+  background : linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #2D2C2C 70.5%);
 
 }
 
@@ -183,7 +183,7 @@ margin-bottom: 30px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    background : #494848;
+    background : #3b3b3b;
   }
 
   .title {
@@ -194,9 +194,9 @@ margin-bottom: 30px;
     height: 100vh;
     display: flex;
     width: 100%;
-    line-height: 50px;
-    background : linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #555454 70.5%);
-    margin :20px;
+    line-height: 40px;
+    background : linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #2D2C2C 70.5%);
+    margin :40px;
 
 
   .BigTitle {
@@ -204,10 +204,10 @@ margin-bottom: 30px;
   display: block;
   text-align: center;
   font-style: normal;
-  font-size: 60px;
+  font-size: 80px;
   position: static;
   margin-top: 30px;
-  color: black;
+  color: rgb(0, 0, 0);
   }
   
   .smalltitle {
@@ -232,12 +232,13 @@ margin-bottom: 30px;
   
   H1, h2 {
     font-family: 'Overpass Mono';
-    font-style: normal;
+    font-style: Normal;
+    font-weight: 100;
     color: rgb(255, 255, 255);
     position: static;
     right: -2em;
     justify-content: right;
-    font-size: 60px;
+    font-size: 90px;
     text-align: center;
   }
 }
@@ -289,7 +290,7 @@ margin-bottom: 30px;
   .Text{
     font-family: 'Overpass Mono';
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     line-height: 35px;
     color: white;
@@ -311,7 +312,6 @@ margin-bottom: 30px;
     } 
   } 
     
- 
     .myhobbies {
       margin:auto;
       font-family: "Overpass Mono";
