@@ -289,7 +289,7 @@ html {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    background-image: url("..//images/graduation.svg");
+    background-image: url("../images/graduation.svg");
     /* The image used */
     /* Full height */
     height: 100%;
