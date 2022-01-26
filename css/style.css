@@ -71,7 +71,7 @@ html {
     font-family: "Overpass Mono";
     display: inline-block;
     position: relative;
-    line-height: 7;
+    line-height: 9;
     margin: 5em;
     color: white;
   }
@@ -82,8 +82,8 @@ html {
     top: 0;
     -webkit-transform: translateX(-50%) rotate(45deg);
             transform: translateX(-50%) rotate(45deg);
-    width: 7em;
-    height: 7em;
+    width: 9em;
+    height: 9em;
     border: 1px solid yellow;
     background-color: #ffe60009;
   }
