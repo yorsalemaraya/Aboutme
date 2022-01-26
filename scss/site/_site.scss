@@ -9,15 +9,18 @@
     font-size: 100%;
     width: 100%;
     margin: 0;
+    scroll-behavior: smooth;
+
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
 
 body {
   background: linear-gradient(180deg, #A8A8A8 0%, #2D2C2C 36.46%);
   max-width: 100%;
   margin: 0;
   background : #3b3b3b;
+
 
 }
 
@@ -74,10 +77,11 @@ H1, h2 {
 
 
 .page-title {
+  font-family: "Overpass Mono";
   display: inline-block;
   position: relative;
-  line-height: 6;
-  margin: 3em;
+  line-height: 7;
+  margin: 5em;
   color: white;
 
   
@@ -87,9 +91,11 @@ H1, h2 {
     left: 50%;
     top: 0;
     transform: translateX(-50%) rotate(45deg);
-    width: 6em;
-    height: 6em;
+    width: 7em;
+    height: 7em;
     border:1px solid yellow;
+    background-color: #ffe60009 ;
+
   }
 }
 
@@ -114,7 +120,7 @@ H1, h2 {
   font-family: Overpass Mono;
   display: block;
   font-size: 15px;
-  text-align: center;
+  text-align: left;
   line-height: 35px;
   color: white;
   padding: 20px;
@@ -164,14 +170,14 @@ font-style: normal;
 width: 100%;
 color: black;
 background-color: #A8A8A8;
-font-size: 30px;
+font-size: 20px;
 text-align: center;
 margin-bottom: 30px;
 
 }
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 800px){
 
   html  {
     font-size: 100%;
@@ -180,7 +186,7 @@ margin-bottom: 30px;
   }
   body {
     max-width: 100%;
-    margin: 0;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     background : #3b3b3b;
@@ -194,7 +200,7 @@ margin-bottom: 30px;
     height: 100vh;
     display: flex;
     width: 100%;
-    line-height: 40px;
+    line-height: 30px;
     background : linear-gradient(136.11deg, #a1a1a1 15.65%, #7c7c7c 40.53%, #2D2C2C 70.5%);
     margin :40px;
 
@@ -204,9 +210,8 @@ margin-bottom: 30px;
   display: block;
   text-align: center;
   font-style: normal;
-  font-size: 80px;
+  font-size: 50px;
   position: static;
-  margin-top: 30px;
   color: rgb(0, 0, 0);
   }
   
@@ -235,6 +240,7 @@ margin-bottom: 30px;
     font-style: Normal;
     font-weight: 100;
     color: rgb(255, 255, 255);
+    line-height: 80px;
     position: static;
     right: -2em;
     justify-content: right;
@@ -285,57 +291,6 @@ margin-bottom: 30px;
     flex-direction: row-reverse;
   }
 
-
-  
-  .Text{
-    font-family: 'Overpass Mono';
-    display: block;
-    font-size: 16px;
-    text-align: center;
-    line-height: 35px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 800px; 
-    animation: fadeInAnimation ease 10s; 
-    animation-fill-mode: forwards; 
-    animation-iteration-count: 1; 
-   
-    @keyframes fadeInAnimation { 
-    0% { 
-    opacity: 0; 
-    } 
-    100% { 
-    opacity: 1; 
-    } 
-    } 
-  } 
-    
-    .myhobbies {
-      margin:auto;
-      font-family: "Overpass Mono";
-      display: flex; 
-      flex-direction: column;
-  }
-
-  p {
-    font-family: "Overpass Mono";
-    color: white;
-    text-align: center; 
-    font-size: 18px;
- }
-
-  .icons_container {
-    display: flex; 
-    justify-content: center;  
-  }
-
-  .logo{
-    margin: 70px;
-    align-content: center;
-  }
-
   .page-title {
     font-family: 'Overpass Mono';
     font-style: normal;
@@ -361,6 +316,61 @@ margin-bottom: 30px;
 
     }
   }
+  
+  .Text{
+    font-family: 'Overpass Mono';
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    line-height: 35px;
+    color: white;
+    margin: auto;
+    padding-left: 20px;
+
+
+    align-items: center;
+    animation: fadeInAnimation ease 10s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1; 
+   
+    @keyframes fadeInAnimation { 
+    0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 
+    } 
+    } 
+  } 
+    
+  .myhobbies {
+    margin:auto;
+    font-family: "Overpass Mono";
+    display: flex; 
+    flex-direction: column;
+  }
+
+  p {
+    font-family: "Overpass Mono";
+    color: white;
+    text-align: center; 
+    font-size: 18px;
+ }
+
+  .icons_container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;  
+  }
+
+  .logo{
+    margin: 70px;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
 
 .footer_title {
   font-family: 'Overpass Mono';
